@@ -76,7 +76,7 @@ class DGLabController:
         self.source_cooldowns = {  # 各来源的冷却时间（秒）
             CommandType.GUI_COMMAND: 0,  # GUI无冷却
             CommandType.PANEL_COMMAND: 0.1,  # 面板命令冷却
-            CommandType.INTERACTION_COMMAND: 0.05,  # 交互命令冷却
+            CommandType.INTERACTION_COMMAND: 0,  # 交互命令冷却
             CommandType.TON_COMMAND: 0.2,  # 游戏联动冷却
         }
         
