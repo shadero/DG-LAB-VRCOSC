@@ -64,6 +64,8 @@ class ControllerSettingsTab(QWidget):
         for pulse_name in PULSE_NAME:
             self.pulse_mode_a_combobox.addItem(pulse_name)
             self.pulse_mode_b_combobox.addItem(pulse_name)
+        self.pulse_mode_a_combobox.setCurrentIndex(6)  # Default to bidirectional
+        self.pulse_mode_b_combobox.setCurrentIndex(6)  # Default to bidirectional
         self.controller_form.addRow(f"A {_('controller_tab.waveform')}:", self.pulse_mode_a_combobox)
         self.controller_form.addRow(f"B {_('controller_tab.waveform')}:", self.pulse_mode_b_combobox)
 
